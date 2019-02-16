@@ -1,7 +1,7 @@
-# bittigercs503-1703
-How do I get set up?
+# 须知
+这个项目应该如何安装？
 
-Summary of set up for first Project: Collaborative Online Judge
+Collaborative Online Judge的安装方法总结：
 # Install NodeJs:
 
 sudo apt-get update
