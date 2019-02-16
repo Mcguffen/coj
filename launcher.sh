@@ -7,18 +7,18 @@ fuser -k 5002/tcp
 
 service redis_6379 start
 cd ./oj-server
-#npm install
+npm install
 if (nodemon server.js&); then
     echo "nodemon server.js & => success"
 else
     echo "nodemon server.js & => fail"
 fi
 
-#cd ../oj-client
-#npm install
-#ng build --watch &
+cd ../oj-client
+npm install
+ng build --watch &
 cd ../executors
-#pip install -r requirements.txt
+pip install -r requirements.txt
 python executor_server.py 5000 &
 python executor_server.py 5001 &
 python executor_server.py 5002 &
